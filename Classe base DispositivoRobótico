@@ -1,4 +1,4 @@
-package  br.com.icaro.engenharia_espacial
+package  br.com.icaro.engenharia_espacial;
 
 // Classe base DispositivoRobótico
 public class DispositivoRobótico {
