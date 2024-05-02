@@ -1,0 +1,55 @@
+package  br.com.icaro.Autonomous
+
+// Classe base DispositivoRobótico
+public class DispositivoRobótico {
+    private String nome;
+    private String capacidadeLocomoção;
+    private double energiaDisponivel;
+    private double capacidadeColetaDados;
+    
+    // Construtor
+    public DispositivoRobótico(String nome, String capacidadeLocomoção, double energiaDisponivel, double capacidadeColetaDados) {
+        this.nome = nome;
+        this.capacidadeLocomoção = capacidadeLocomoção;
+        this.energiaDisponivel = energiaDisponivel;
+        this.capacidadeColetaDados = capacidadeColetaDados;
+    }
+    
+    // Método calcularEficiencia() a ser sobrescrito nas subclasses
+    public double calcularEficiencia() {
+        return energiaDisponivel / capacidadeColetaDados;
+    }
+    
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public String getCapacidadeLocomoção() {
+        return capacidadeLocomoção;
+    }
+    
+    public void setCapacidadeLocomoção(String capacidadeLocomoção) {
+        this.capacidadeLocomoção = capacidadeLocomoção;
+    }
+    
+    public double getEnergiaDisponivel() {
+        return energiaDisponivel;
+    }
+    
+    public void setEnergiaDisponivel(double energiaDisponivel) {
+        this.energiaDisponivel = energiaDisponivel;
+    }
+    
+    public double getCapacidadeColetaDados() {
+        return capacidadeColetaDados;
+    }
+    
+    public void setCapacidadeColetaDados(double capacidadeColetaDados) {
+        this.capacidadeColetaDados = capacidadeColetaDados;
+    }
+}
