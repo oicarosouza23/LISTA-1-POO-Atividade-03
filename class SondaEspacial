@@ -1,0 +1,30 @@
+package  br.com.icaro.Autonomous
+// Subclasse SondaEspacial
+public class SondaEspacial extends DispositivoRobótico {
+    private double velocidadeTransmissao;
+    private double autonomiaVoo;
+    
+    // Construtor
+    public SondaEspacial(String nome, String capacidadeLocomoção, double energiaDisponivel, double capacidadeColetaDados, double velocidadeTransmissao, double autonomiaVoo) {
+        super(nome, capacidadeLocomoção, energiaDisponivel, capacidadeColetaDados);
+        this.velocidadeTransmissao = velocidadeTransmissao;
+        this.autonomiaVoo = autonomiaVoo;
+    }
+    
+    // Métodos específicos
+    public double getVelocidadeTransmissao() {
+        return velocidadeTransmissao;
+    }
+    
+    public void setVelocidadeTransmissao(double velocidadeTransmissao) {
+        this.velocidadeTransmissao = velocidadeTransmissao;
+    }
+    
+    public double getAutonomiaVoo() {
+        return autonomiaVoo;
+    }
+    
+    public void setAutonomiaVoo(double autonomiaVoo) {
+        this.autonomiaVoo = autonomiaVoo;
+    }
+}
