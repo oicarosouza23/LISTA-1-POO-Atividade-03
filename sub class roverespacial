@@ -1,0 +1,30 @@
+package  br.com.icaro.Autonomous
+// Subclasse RoverEspacial
+public class RoverEspacial extends DispositivoRobótico {
+    private double resistenciaTemperatura;
+    private double capacidadeAmostras;
+    
+    // Construtor
+    public RoverEspacial(String nome, String capacidadeLocomoção, double energiaDisponivel, double capacidadeColetaDados, double resistenciaTemperatura, double capacidadeAmostras) {
+        super(nome, capacidadeLocomoção, energiaDisponivel, capacidadeColetaDados);
+        this.resistenciaTemperatura = resistenciaTemperatura;
+        this.capacidadeAmostras = capacidadeAmostras;
+    }
+    
+    // Métodos específicos
+    public double getResistenciaTemperatura() {
+        return resistenciaTemperatura;
+    }
+    
+    public void setResistenciaTemperatura(double resistenciaTemperatura) {
+        this.resistenciaTemperatura = resistenciaTemperatura;
+    }
+    
+    public double getCapacidadeAmostras() {
+        return capacidadeAmostras;
+    }
+    
+    public void setCapacidadeAmostras(double capacidadeAmostras) {
+        this.capacidadeAmostras = capacidadeAmostras;
+    }
+}
